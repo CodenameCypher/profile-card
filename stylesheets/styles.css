@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 2;
+}
+
+html{
+    background-color: #141414;
+}
+
+.bg{
+    position: fixed;
+    z-index: -1;
+}
+.instaLogo{
+    position: fixed;
+    top: 40px;
+    left: 50px;
+}
+.circle1{
+    position: fixed;
+    bottom: -10px;
+    right: -300px;
+}
+.circle2{
+    position: fixed;
+    top: -535px;
+    left: -500px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: min-content;
+    align-items: center;
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 4.5%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.middleBG, .information,.instaStatus{
+    width: fit-content;
+    height: fit-content;
+}
+
+.information{
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+.dpImage img{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.middleBG img{
+    border-radius: 7px;
+}
+
+.instaStatus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 2px solid hsl(0, 0%, 59%);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .bg{
+        transform: scale(0.4);
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    .flex-container{
+        transform: scale(0.7);
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+}
